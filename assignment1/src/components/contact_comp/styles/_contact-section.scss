@@ -1,0 +1,42 @@
+@use '../../../scss/main.scss' as *;
+
+.contact_section {
+    color: $secondary-color;
+    display: grid;
+    place-items: center;
+    padding: $spacing-normal;
+
+    &__header {
+        @include section-header();
+        @include border-accent-shape()
+    }
+
+    &__form {
+        @include border-shape();
+        padding: $spacing-small;
+        margin-bottom: $spacing-normal;
+        display: grid;
+    }
+
+    & .form__label {
+        margin: 0 $spacing-small ;
+    }
+
+    & .form__input,
+    & .form__text_area {
+        background-color: $main-color;
+        @include border-shape();
+        margin: $spacing-small $spacing-small ;
+        padding: $spacing-small;
+        color: $secondary-color;
+
+        &::placeholder {
+            color: $accents-color
+        }
+    }
+
+    & .form__submit {
+        @include button-component();
+        margin: auto;
+    }
+}

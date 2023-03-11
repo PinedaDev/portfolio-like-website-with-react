@@ -4,6 +4,7 @@ import Services from './components/services_comp/Services'
 import TechStack from './components/tech-stack_comp/TechStack'
 import Blogs from './components/blogs_comp/Blogs'
 import './scss/main.scss'
+import Contact from './components/contact_comp/Contact'
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
       <Services />
       <TechStack />
       <Blogs />
+      <hr />
+      <Contact />
     </>
   )
 }
