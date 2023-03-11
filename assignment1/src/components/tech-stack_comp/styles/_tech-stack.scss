@@ -1,0 +1,22 @@
+@use '../../../scss/main.scss' as *;
+
+.tech_stack_section {
+    display: grid;
+    place-items: center;
+    color: $secondary-color;
+    padding: $spacing-normal;
+    min-height: 50vh;
+
+    &__header {
+        @include section-header();
+        @include border-accent-shape();
+    }
+
+    &__icons {
+        width: 100%;
+        list-style-type: none;
+        font-size: 5rem;
+
+        @include flex-align();
+    }
+}
