@@ -65,6 +65,8 @@ $font-bold: 700;
     font-size: $text-size-base;
     padding: $spacing-small;
     transition: .3s ease-in-out;
+    text-align: center;
+    width: fit-content;
     cursor: pointer;
 
     @include border-shape();

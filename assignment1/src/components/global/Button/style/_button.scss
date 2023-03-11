@@ -2,4 +2,5 @@
 
 .btn {
     @include button-component;
+    text-decoration: none;
 }
