@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Tilt+Prism&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$main-color: #2B3467;
+$secondary-color: #BAD7E9;
+$accents-color: #EB455F;
+
+$spacing-base: 2rem;
+$spacing-small: $spacing-base * 0.5;
+$spacing-normal: $spacing-base;
+$spacing-large: $spacing-base * 2;
+
+$text-size-base: 1.5rem;
+$text-small: $text-size-base * 0.8;
+$text-larger: $text-size-base * 1.5;
+$text-xxl: $text-size-base * 2;
+
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+
+@mixin montserrat-base {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: $font-regular;
+}
+
+@mixin section-header {
+    font-size: $text-xxl;
+    text-align: center;
+    margin: $spacing-normal;
+}
+
+@mixin flex-align {
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+@mixin flex-align {
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+@mixin border-accent-shape {
+    border-bottom: 5px solid $accents-color;
+    border-radius: 5px;
+}
+
+@mixin border-shape {
+    border: 3px solid $secondary-color;
+    border-radius: 10px;
+}
+
+@mixin button-component {
+    color: $secondary-color;
+    background-color: $main-color;
+    font-weight: $font-bold;
+    font-size: $text-size-base;
+    padding: $spacing-small;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+
+    @include border-shape();
+
+    &:hover {
+        color: $accents-color;
+        transform: scale(1.1);
+    }
+}
+
+body {
+    @include montserrat-base;
+    background-color: $main-color;
+    display: grid;
+}
+
+hr {
+    border-color: $secondary-color;
+}
