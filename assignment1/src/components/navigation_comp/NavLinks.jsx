@@ -1,8 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
-const NavLinks = () => {
-
-    const linkNames = ['Home', 'Services', 'Blogs', 'Contact']
+const NavLinks = ({ linkNames }) => {
 
     const showLinks = () => {
         return (
@@ -23,6 +22,10 @@ const NavLinks = () => {
             {showLinks()}
         </ul>
     )
+}
+
+NavLinks.propTypes = {
+    linkNames: PropTypes.array,
 }
 
 export default NavLinks
