@@ -1,8 +1,8 @@
 import React from 'react'
 
-import TechLogo from './TechLogo'
+import TechLogo from '../../components/tech-stack_comp/TechLogo'
 
-// import './styles/_tech-stack.scss'
+import './styles/_tech-stack.scss'
 
 const TechStack = () => {
 

@@ -17,6 +17,14 @@
 
 ;
 
+@mixin for-small-screen {
+    @media (max-width: 1280px) {
+        @content
+    }
+}
+
+;
+
 
 @mixin montserrat-base {
     font-family: 'Montserrat', sans-serif;

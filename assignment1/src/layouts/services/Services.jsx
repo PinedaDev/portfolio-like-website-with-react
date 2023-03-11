@@ -1,8 +1,10 @@
 import React from 'react'
 
-import ServiceCard from './ServiceCard'
-// import './styles/_services-section.scss'
+import ServiceCard from '../../components/services_comp/service_card/ServiceCard'
+import './styles/_services-section.scss'
+
 const Services = () => {
+
     const serviceNames = ['Service 1', 'Service 2', 'Service 3']
     const showCards = () => {
         return (

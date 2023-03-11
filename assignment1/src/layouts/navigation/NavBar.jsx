@@ -19,7 +19,7 @@ const NavBar = () => {
         <nav className="navigation" aria-label="navigation menu">
             <span className="logo" aria-label="logo">KEYS</span>
             <NavLinks linkNames={linkNames} />
-            <MenuBtn changeMenuState={changeMenuState} />
+            <MenuBtn type='open' changeMenuState={changeMenuState} />
             <DropdownMenu changeMenuState={changeMenuState}
                 linkNames={linkNames}
                 menuState={menuState} />

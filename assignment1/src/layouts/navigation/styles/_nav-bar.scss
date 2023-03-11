@@ -48,6 +48,8 @@
         position: absolute;
         background-color: $main-color;
         border-bottom: 3px solid $accents-color;
+        display: grid;
+        place-items: center;
         width: 100%;
         transition: .3s ease-in-out;
 
