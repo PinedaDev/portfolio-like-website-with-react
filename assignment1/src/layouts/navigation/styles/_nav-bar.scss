@@ -1,0 +1,92 @@
+@use '../../../scss/library.scss' as *;
+@use '../../../scss/mixins.scss' as *;
+
+.logo {
+    font-family: 'Tilt Prism';
+    color: $secondary-color;
+    font-size: 3rem;
+    padding: $spacing-normal;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        color: $accents-color;
+    }
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    &__links {
+        @include flex-align();
+        list-style-type: none;
+
+        @include for-tablet() {
+            display: none;
+        }
+
+    }
+
+    &__link {
+        color: $secondary-color;
+        text-decoration: none;
+        transition: .3s;
+        font-size: $text-small;
+        margin: $spacing-normal;
+        @include border-accent-shape();
+        border-color: transparent;
+
+        &:hover {
+            color: $accents-color;
+            border-color: $accents-color;
+        }
+    }
+
+    &__dropdown {
+        position: absolute;
+        background-color: $main-color;
+        border-bottom: 3px solid $accents-color;
+        width: 100%;
+        transition: .3s ease-in-out;
+
+        & .dropdown__links {
+            padding: $spacing-normal;
+            list-style-type: none;
+            display: grid;
+            place-items: center;
+            grid-gap: $spacing-normal;
+        }
+
+        & .dropdown__link {
+            font-size: $text-xxl;
+            text-decoration: none;
+            color: $secondary-color;
+        }
+
+    }
+
+    &__btn {
+        display: none;
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        margin: $spacing-normal;
+        color: $secondary-color;
+
+        @include for-tablet() {
+            display: initial;
+        }
+    }
+
+    & .hidden {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    & .visible {
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+}

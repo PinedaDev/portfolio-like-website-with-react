@@ -5,7 +5,7 @@ import imgBlog1 from '../../assets/imgs/img-1.jpg'
 import imgBlog2 from '../../assets/imgs/img-2.jpg'
 import imgBlog3 from '../../assets/imgs/img-3.jpg'
 
-import './styles/_blogs-section.scss'
+// import './styles/_blogs-section.scss'
 
 const Blogs = () => {
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 import FooterMedia from './FooterMedia';
 
-import './styles/_footer-section.scss';
+// import './styles/_footer-section.scss';
 
 const Footer = () => {
 

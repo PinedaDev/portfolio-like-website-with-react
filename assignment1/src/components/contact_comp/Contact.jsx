@@ -2,7 +2,7 @@ import React from 'react'
 
 import Form from './Form'
 
-import './styles/_contact-section.scss'
+// import './styles/_contact-section.scss'
 
 const Contact = () => {
     return (

@@ -1,0 +1,50 @@
+@use '../../../scss/library.scss' as *;
+@use '../../../scss/mixins.scss' as *;
+
+.hero {
+    height: 100vh;
+    padding: $spacing-normal;
+    color: $secondary-color;
+
+    @include flex-align();
+
+    &__text {
+        font-size: $text-larger;
+        display: block;
+        max-width: 50%;
+
+        @include for-tablet () {
+            font-size: $text-size-base;
+            max-width: 80%;
+        }
+
+        @include for-phone () {
+            font-size: $text-small;
+        }
+    }
+
+    &__highlight {
+        color: $accents-color;
+    }
+
+    &__image {
+        width: 700px;
+
+        @media (max-width: 1280) {
+            width: 600px;
+        }
+
+        @include for-tablet () {
+            width: 300px;
+        }
+
+        @include for-phone () {
+            width: 200px;
+        }
+    }
+
+    @include for-tablet () {
+        display: grid;
+        place-items: center;
+    }
+}

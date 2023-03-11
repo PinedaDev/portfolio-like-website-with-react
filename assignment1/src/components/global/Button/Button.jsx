@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-import './style/_button.scss'
+// import './style/_button.scss'
 
 const Button = ({ text, link }) => {
     link ? link : link = '#';

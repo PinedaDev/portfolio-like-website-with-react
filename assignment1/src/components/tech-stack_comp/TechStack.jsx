@@ -2,7 +2,7 @@ import React from 'react'
 
 import TechLogo from './TechLogo'
 
-import './styles/_tech-stack.scss'
+// import './styles/_tech-stack.scss'
 
 const TechStack = () => {
 

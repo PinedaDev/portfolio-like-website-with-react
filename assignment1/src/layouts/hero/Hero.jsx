@@ -13,7 +13,7 @@ const Hero = () => {
                 exercitationem nam praesentium soluta aspernatur ut suscipit consequuntur <br />
                 adipisci. Velit voluptatibus dolore illum molestiae. Voluptate, fuga!
             </p>
-            <img className="hero__image" src={heroImg} width="900px" alt="ilustration of person with laptop"></img>
+            <img className="hero__image" src={heroImg} alt="ilustration of person with laptop"></img>
         </div>
     )
 }
