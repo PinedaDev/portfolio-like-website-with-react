@@ -1,5 +1,6 @@
 import React from 'react'
 import FormInput from './FormInput'
+import FormTextArea from './FormTextArea'
 
 const Form = () => {
 
@@ -20,6 +21,13 @@ const Form = () => {
         },
     ]
 
+    const textAreaProps = {
+        id: 'more-info',
+        label: 'Free words:',
+        name: 'info',
+        placeHolder: 'Do you need to tell us anything?'
+    }
+
     const showInputs = () => {
         return (
             inputs.map(input => (
@@ -31,6 +39,10 @@ const Form = () => {
     return (
         <form className="contact_section__form" aria-labelledby="contact-header">
             {showInputs()}
+            <FormTextArea {...textAreaProps} />
+            <button className="form__submit" type="submit">
+                Send
+            </button>
         </form>
     )
 }

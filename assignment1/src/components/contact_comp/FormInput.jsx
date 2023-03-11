@@ -3,13 +3,9 @@ import PropTypes from 'prop-types'
 
 const FormInput = ({ id, label, name, type, placeHolder }) => {
 
-    const [input, setInput] = useState(null);
+    const [input, setInput] = useState('');
 
     const inputHandler = (event) => setInput(event.target.value)
-
-    useEffect(() => (
-        console.log(input)
-    ), [input])
 
     return (
         <>
@@ -18,6 +14,7 @@ const FormInput = ({ id, label, name, type, placeHolder }) => {
                 placeholder={placeHolder}
                 type={type} name={name}
                 id={id}
+                value={input}
                 onChange={e => inputHandler(e)}
                 required
             /> <br />

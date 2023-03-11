@@ -3,8 +3,9 @@ import NavBar from './components/navigation_comp/NavBar'
 import Services from './components/services_comp/Services'
 import TechStack from './components/tech-stack_comp/TechStack'
 import Blogs from './components/blogs_comp/Blogs'
-import './scss/main.scss'
 import Contact from './components/contact_comp/Contact'
+import Footer from './components/footer/Footer'
+import './scss/main.scss'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Blogs />
       <hr />
       <Contact />
+      <Footer />
     </>
   )
 }

@@ -1,0 +1,44 @@
+@use '../../../scss/main.scss' as *;
+
+.footer_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $main-color;
+    padding: $spacing-normal 0;
+    min-height: 20vh;
+    background-color: $secondary-color;
+
+    &__rights {
+        @include border-accent-shape();
+        font-weight: $font-bold;
+        font-size: $text-size-base;
+    }
+
+    &__rights_link {
+        text-decoration: none;
+        color: $accents-color;
+        transition: .3s;
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+
+    &__links_container {
+        min-width: 20%;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+    }
+
+    &__link {
+        color: $main-color;
+        font-size: 3rem;
+        transition: .3s;
+
+        &:hover {
+            color: $accents-color;
+        }
+    }
+}
