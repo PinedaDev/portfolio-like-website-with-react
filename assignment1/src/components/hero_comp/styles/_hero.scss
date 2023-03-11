@@ -1,0 +1,18 @@
+@use '../../../scss/main.scss' as *;
+
+.hero {
+    height: 100vh;
+    padding: $spacing-normal;
+    color: $secondary-color;
+    @include flex-align();
+
+    &__text {
+        font-size: $text-larger;
+        display: block;
+        max-width: 50%;
+    }
+
+    &__highlight {
+        color: $accents-color;
+    }
+}
