@@ -1,0 +1,5 @@
+@use '../../../../scss/main.scss' as *;
+
+.btn {
+    @include button-component;
+}
