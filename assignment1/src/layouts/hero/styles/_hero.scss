@@ -2,9 +2,15 @@
 @use '../../../scss/mixins.scss' as *;
 
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     padding: $spacing-normal;
     color: $secondary-color;
+
+    @include for-tablet () {
+        display: grid;
+        place-items: center;
+        grid-gap: 2rem;
+    }
 
     @include flex-align();
 
@@ -12,6 +18,10 @@
         font-size: $text-larger;
         display: block;
         max-width: 50%;
+
+        @include for-small-screen () {
+            font-size: $text-size-base;
+        }
 
         @include for-tablet () {
             font-size: $text-size-base;
@@ -34,8 +44,8 @@
             width: 600px;
         }
 
-        @include for-tablet () {
-            width: 300px;
+        @include for-small-screen () {
+            width: 350px;
         }
 
         @include for-phone () {
@@ -43,8 +53,5 @@
         }
     }
 
-    @include for-tablet () {
-        display: grid;
-        place-items: center;
-    }
+
 }

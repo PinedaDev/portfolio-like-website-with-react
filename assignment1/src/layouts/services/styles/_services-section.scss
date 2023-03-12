@@ -8,6 +8,10 @@
     place-items: center;
     min-height: 50vh;
 
+    @include for-tablet () {
+        padding: 0;
+    }
+
     &__header {
         @include section-header();
         @include border-accent-shape();
@@ -35,6 +39,10 @@
         box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.3);
 
         @include border-shape();
+
+        @include for-phone() {
+            margin: $spacing-small;
+        }
 
         &:hover {
             transform: translateY(-5%);

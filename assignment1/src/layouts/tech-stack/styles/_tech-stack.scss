@@ -18,6 +18,10 @@
         list-style-type: none;
         font-size: 5rem;
 
+        @include for-tablet() {
+            font-size: 3rem;
+        }
+
         @include flex-align();
     }
 }
