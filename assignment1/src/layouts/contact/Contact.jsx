@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Form from './Form'
+import Form from '../../components/contact_comp/Form'
 
-// import './styles/_contact-section.scss'
+import './styles/_contact-section.scss'
 
 const Contact = () => {
     return (
