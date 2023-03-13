@@ -11,14 +11,14 @@ const Searchfield = () => {
     }
 
     return (
-        <div className='search-field'>
-            <input placeholder='looking for someone ?'
-                value={searchValue} type="search"
-                onChange={(e) => searchHandler(e)} />
+        <div className='relative'>
+            <input value={searchValue} type="search"
+                onChange={(e) => searchHandler(e)}
+                className=' p-2 rounded text-center font-semibold text-third bg-main' />
             {searchValue === "" &&
                 <Icon
+                    className='absolute top-1/2 left-[85%] -translate-y-1/2 text-accent'
                     path={mdiMagnify}
-                    color="#234691"
                     size={1}>
                 </Icon>}
         </div>

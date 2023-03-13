@@ -15,7 +15,7 @@ module.exports = {
       main: '#222831',
       secondary: '#393E46',
       third: '#EEEEEE',
-      accent: '#EEEEEE',
+      accent: '#00ADB5',
     },
     fontFamily: {
       montserrat: ['Montserrat', 'sans-serif'],
