@@ -11,7 +11,23 @@ const DataView = () => {
             orders: 2,
             spent: 122.213,
             lastPurchase: '12.02.2002'
-        }
+        },
+        {
+            id: 1231245,
+            name: 'Ernesto Chavez',
+            lastSeen: '30.02.2007',
+            orders: 5,
+            spent: 3445.213,
+            lastPurchase: '29.02.2007'
+        },
+        {
+            id: 43563,
+            name: 'Juan Gamacho',
+            lastSeen: '12.06.2004',
+            orders: 1,
+            spent: 234,
+            lastPurchase: '12.03.2003'
+        },
     ]
 
     const showCustomers = () => (
