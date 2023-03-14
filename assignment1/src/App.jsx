@@ -1,10 +1,10 @@
-import NavBar from './layouts/navigation/NavBar'
-import Hero from './layouts/hero/Hero'
-import Services from './layouts/services/Services'
-import TechStack from './layouts/tech-stack/TechStack'
-import Blogs from './layouts/blogs/Blogs'
-import Contact from './layouts/contact/Contact'
-import Footer from './layouts/footer/Footer'
+import NavBar from './layouts/Navigation/NavBar'
+import Hero from './layouts/Hero/Hero'
+import Services from './layouts/Services/Services'
+import TechStack from './layouts/TechStack/TechStack'
+import Blogs from './layouts/Blogs/Blogs'
+import Contact from './layouts/Contact/Contact'
+import Footer from './layouts/Footer/Footer'
 import './scss/main.scss'
 
 const App = () => {

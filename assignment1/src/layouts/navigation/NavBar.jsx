@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import NavLinks from '../../components/navigation_comp/nav_links/NavLinks'
-import MenuBtn from '../../components/navigation_comp/menu_btn/MenuBtn'
+
+import NavLinks from '../../components/NavigationComp/NavLinks/NavLinks'
+import MenuBtn from '../../components/NavigationComp/MenuBtn/MenuBtn'
+import DropdownMenu from '../../components/NavigationComp/DropdownMenu/DropdownMenu'
 
 import './styles/_nav-bar.scss'
-import DropdownMenu from '../../components/navigation_comp/dropdown_menu/DropdownMenu'
 
 const NavBar = () => {
 

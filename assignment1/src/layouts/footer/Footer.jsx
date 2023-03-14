@@ -1,6 +1,6 @@
 import React from 'react'
 
-import FooterMedia from '../../components/footer/FooterMedia';
+import FooterMedia from '../../components/Footer/FooterMedia';
 
 import './styles/_footer-section.scss';
 

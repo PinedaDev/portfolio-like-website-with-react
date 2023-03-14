@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-import MenuBtn from '../menu_btn/MenuBtn'
+import MenuBtn from '../MenuBtn/MenuBtn'
 
 const DropdownMenu = ({ linkNames, changeMenuState, menuState }) => {
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Form from '../../components/contact_comp/Form'
+import Form from '../../components/ContactComp/Form'
 
 import './styles/_contact-section.scss'
 
