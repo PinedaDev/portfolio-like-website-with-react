@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import CheckBox from '../../global/checkbox/CheckBox'
 import UserName from '../user_name/UserName'
@@ -21,3 +22,11 @@ const UserCard = ({ name, lastSeen, orders, spent, lastPurchase }) => {
 }
 
 export default UserCard
+
+UserCard.propTypes = {
+    name: PropTypes.string,
+    lastSeen: PropTypes.string,
+    orders: PropTypes.number,
+    spent: PropTypes.number,
+    lastPurchase: PropTypes.string,
+}

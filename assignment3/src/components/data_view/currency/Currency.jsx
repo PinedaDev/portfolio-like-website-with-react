@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Currency = ({ value }) => {
     return (
@@ -9,3 +10,7 @@ const Currency = ({ value }) => {
 }
 
 export default Currency
+
+Currency.propTypes = {
+    value: PropTypes.number
+}
