@@ -1,6 +1,6 @@
 import './app.css'
-import DataView from './components/data_view/DataView'
-import Header from './components/top_section/Header'
+import DataView from './components/DataView/DataView'
+import Header from './components/TopSection/Header'
 
 function App() {
   return (

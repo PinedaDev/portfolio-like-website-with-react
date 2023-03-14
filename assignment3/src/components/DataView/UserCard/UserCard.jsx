@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import CheckBox from '../../global/checkbox/CheckBox'
-import UserName from '../user_name/UserName'
-import Currency from '../currency/Currency'
+import CheckBox from '../../global/Checkbox/CheckBox'
+import UserName from '../UserName/UserName'
+import Currency from '../Currency/Currency'
 
 const UserCard = ({ name, lastSeen, orders, spent, lastPurchase }) => {
 

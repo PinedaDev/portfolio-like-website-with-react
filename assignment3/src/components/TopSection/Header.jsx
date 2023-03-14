@@ -1,6 +1,6 @@
 import React from 'react'
-import ActionBar from './action_bar/ActionBar'
-import Searchfield from './searchfield/Searchfield'
+import ActionBar from './ActionBar/ActionBar'
+import Searchfield from './Searchfield/Searchfield'
 
 const Header = () => {
     return (

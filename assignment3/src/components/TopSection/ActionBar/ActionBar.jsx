@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ActionBtn from '../../global/action_btn/ActionBtn'
+import ActionBtn from '../../Global/ActionBtn/ActionBtn'
 
 import { mdiFilterVariantPlus } from '@mdi/js'
 import { mdiAccountPlus } from '@mdi/js'

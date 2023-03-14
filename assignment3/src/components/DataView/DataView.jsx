@@ -1,6 +1,6 @@
 import React from 'react'
-import TableHeader from './table_header/TableHeader'
-import UserCard from './user_card/UserCard'
+import TableHeader from './TableHeader/TableHeader'
+import UserCard from './UserCard/UserCard'
 
 const DataView = () => {
     const customers = [

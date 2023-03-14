@@ -1,6 +1,6 @@
 import React from 'react'
-import CheckBox from '../../global/checkbox/CheckBox'
-import TableCategory from './table_category/TableCategory'
+import CheckBox from '../../global/Checkbox/CheckBox'
+import TableCategory from './TableCategory/TableCategory'
 
 const TableHeader = () => {
     const categories = [
