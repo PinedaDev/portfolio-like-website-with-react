@@ -17,7 +17,7 @@ const TableHeader = () => {
         ))
     )
     return (
-        <div className='grid grid-cols-[1fr_repeat(5,_2fr)] p-3'>
+        <div className='grid grid-cols-[1fr_repeat(5,_2fr)] p-3 place-items-center'>
             <CheckBox />
             {showCategory()}
         </div>
