@@ -1,20 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useCountry } from "../../hooks/useCountry"
 
-export function withCountry(Component) {
+export function withCountry(Component, inputValue) {
     return (props) => {
-        const [country, setCountry] = useState([])
-
-        useEffect(() => {
-            const loadCountryData = async (name) => {
-                const response = await fetch(`https://restcountries.com/v3.1/name/${name}`)
-                const data = await response.json();
-                setCountry(data)
-            }
-            loadCountryData('suomi');
-        }, [])
-
-
-
+        const [error, country] = useCountry(inputValue)
         return <Component {...props} country={country} />
     }
 }
