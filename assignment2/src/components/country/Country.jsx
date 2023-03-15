@@ -1,5 +1,4 @@
 import React from 'react'
-import { withCountry } from '../HoC/withCountry'
 
 const Country = ({ country }) => {
     return (
@@ -17,4 +16,4 @@ const Country = ({ country }) => {
     )
 }
 
-export default withCountry(Country)
+export default Country;

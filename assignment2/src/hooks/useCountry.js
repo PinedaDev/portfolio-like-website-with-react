@@ -14,7 +14,7 @@ export const useCountry = countryName => {
             const data = await response.json();
             setCountry(data)
         } catch (err) {
-            setError(err)
+            setError(`Error fetching country data: ${err}`);
         }
     }
 
