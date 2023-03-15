@@ -5,9 +5,7 @@ export const useCountry = countryName => {
     const [error, setError] = useState(null)
 
     useEffect(() => {
-        if (countryName) {
-            loadCountryData(countryName);
-        }
+        loadCountryData(countryName);
     }, [countryName])
 
     const loadCountryData = async () => {

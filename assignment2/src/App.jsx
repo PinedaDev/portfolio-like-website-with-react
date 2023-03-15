@@ -11,7 +11,7 @@ function App() {
 
   const handleInput = (e) => {
     let value = e.target.value
-    if (value.length >= 4) {
+    if (value.length > 3) {
       setInputValue(preValue => setInputValue(value))
       console.log(inputValue)
     }
@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <input type="text" onChange={handleInput} />
-      <Country country={country} />
+      <Country />
     </div>
   )
 }
