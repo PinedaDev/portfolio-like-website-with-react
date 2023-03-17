@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+
 
 const NavLinks = ({ linkNames }) => {
 
@@ -23,9 +23,4 @@ const NavLinks = ({ linkNames }) => {
         </ul>
     )
 }
-
-NavLinks.propTypes = {
-    linkNames: PropTypes.array,
-}
-
 export default NavLinks
