@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-import Button from '../Global/Button/Button'
+import Button from '../../Global/Button/Button'
 
 const BlogCard = ({ image, imageDescription, headerText, link }) => {
     return (

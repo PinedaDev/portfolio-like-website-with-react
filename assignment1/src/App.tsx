@@ -9,19 +9,21 @@ import './scss/main.scss'
 
 const App = () => {
   return (
-    <>
-      <NavBar />
-      <hr />
-      <Hero />
-      <hr />
-      <Services />
-      <TechStack />
-      <Blogs />
-      <hr />
-      <Contact />
-      <Footer />
-    </>
+    <div>
+      <h1>Hello TypeScript</h1>
+    </div>
   )
 }
 
 export default App
+
+  // < NavBar />
+  //     <hr />
+  //     <Hero />
+  //     <hr />
+  //     <Services />
+  //     <TechStack />
+  //     <Blogs />
+  //     <hr />
+  //     <Contact />
+  //     <Footer />

@@ -1,5 +1,5 @@
 import React from 'react'
-import BlogCard from '../../components/BlogsComp/BlogCard'
+import BlogCard from './BlogCard/BlogCard'
 
 import imgBlog1 from '../../assets/imgs/img-1.jpg'
 import imgBlog2 from '../../assets/imgs/img-2.jpg'
