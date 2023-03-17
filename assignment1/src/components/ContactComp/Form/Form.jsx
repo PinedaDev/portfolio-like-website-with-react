@@ -1,6 +1,6 @@
 import React from 'react'
-import FormInput from './FormInput/FormInput'
-import FormTextArea from './FormTextarea/FormTextArea'
+import FormInput from '../FormInput/FormInput'
+import FormTextArea from '../FormTextarea/FormTextArea'
 
 const Form = () => {
 

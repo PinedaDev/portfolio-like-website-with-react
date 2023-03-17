@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TechLogo from '../../components/TechStackComp/TechLogo'
+import TechLogo from './TechLogo/TechLogo'
 
 import './styles/_tech-stack.scss'
 
