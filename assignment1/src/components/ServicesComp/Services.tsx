@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ServiceCard from '../../components/ServicesComp/ServiceCard/ServiceCard'
+import ServiceCard from './ServiceCard/ServiceCard'
 import './styles/_services-section.scss'
 
 const Services = () => {

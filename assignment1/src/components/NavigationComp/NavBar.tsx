@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
-import NavLinks from '../../components/NavigationComp/NavLinks/NavLinks'
-import MenuBtn from '../../components/NavigationComp/MenuBtn/MenuBtn'
-import DropdownMenu from '../../components/NavigationComp/DropdownMenu/DropdownMenu'
+import NavLinks from './NavLinks/NavLinks'
+import MenuBtn from './MenuBtn/MenuBtn'
+import DropdownMenu from './DropdownMenu/DropdownMenu'
 
 import './styles/_nav-bar.scss'
 
