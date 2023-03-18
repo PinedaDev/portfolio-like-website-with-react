@@ -4,6 +4,7 @@ import Services from './components/ServicesComp/Services';
 import TechStack from './components/TechStackComp/TechStack';
 import Blogs from './components/BlogsComp/Blogs';
 import Contact from './components/ContactComp/Contact';
+import Footer from './components/FooterComp/Footer';
 
 import './scss/main.scss'
 
@@ -18,17 +19,9 @@ const App = () => {
       <Blogs />
       <hr />
       <Contact />
+      <Footer />
     </>
   )
 }
 
 export default App
-
-  // < NavBar />
-  //     <hr />
-  //     
-  //     <TechStack />
-  //     <Blogs />
-  //     <hr />
-  //     <Contact />
-  //     <Footer />
