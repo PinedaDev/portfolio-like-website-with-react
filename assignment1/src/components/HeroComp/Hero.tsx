@@ -1,9 +1,9 @@
-import React from 'react'
-
 import heroImg from '../../assets/imgs/header.svg'
+
 import './styles/_hero.scss'
 
 const Hero = () => {
+
     return (
         <div className='hero'>
             <p className="hero__text">
