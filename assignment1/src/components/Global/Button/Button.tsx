@@ -1,9 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types';
+type ButtonProps = {
+    text: string;
+    link?: string;
+}
 
-// import './style/_button.scss'
+const Button = ({ text, link }: ButtonProps) => {
 
-const Button = ({ text, link }) => {
     link ? link : link = '#';
 
     return (
@@ -12,10 +13,4 @@ const Button = ({ text, link }) => {
         </a>
     )
 }
-
-Button.propTypes = {
-    text: PropTypes.string,
-    link: PropTypes.string,
-}
-
 export default Button

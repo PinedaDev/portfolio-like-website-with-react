@@ -1,8 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import Button from '../../Global/Button/Button';
 
-const ServiceCard = ({ serviceName }) => {
+type ServiceCardProps = {
+    serviceName: string
+}
+
+const ServiceCard = ({ serviceName }: ServiceCardProps) => {
     return (
         <div className="services_section__card">
             <h2 className="services_section__card_header" id="service1">
@@ -18,9 +20,4 @@ const ServiceCard = ({ serviceName }) => {
         </div>
     )
 }
-
-ServiceCard.propTypes = {
-    serviceName: PropTypes.string,
-}
-
 export default ServiceCard
