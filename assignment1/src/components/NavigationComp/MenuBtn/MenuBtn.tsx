@@ -1,17 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-
-const MenuBtn = ({ changeMenuState, type }) => {
-    return (
-        <button onClick={changeMenuState} className='navigation__btn'>
-            <i className={type === 'open' ? 'fa fa-bars' : 'fa fa-close'}></i>
-        </button>
-    )
+type MenuBtnProps = {
+  type: string;
+  changeMenuState: () => void
 }
 
-MenuBtn.propTypes = {
-    changeMenuState: PropTypes.func,
-    type: PropTypes.string
+const MenuBtn = ({ changeMenuState, type }: MenuBtnProps) => {
+  return (
+    <button onClick={changeMenuState} className='navigation__btn'>
+      <i className={type === 'open' ? 'fa fa-bars' : 'fa fa-close'}></i>
+    </button>
+  )
 }
-
 export default MenuBtn

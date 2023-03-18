@@ -10,24 +10,24 @@ import './styles/_nav-bar.scss'
 
 const NavBar = () => {
 
-    const linkNames: string[] = ['Home', 'Services', 'Blogs', 'Contact']
-    const [menuState, setMenuState] = useState(false);
+  const linkNames = ['Home', 'Services', 'Blogs', 'Contact']
+  const [menuState, setMenuState] = useState(false);
 
-    const changeMenuState = (): void => {
-        setMenuState((prevState) => !prevState)
-    }
+  const changeMenuState = (): void => {
+    setMenuState((prevState) => !prevState)
+  }
 
-    return (
-        <nav className="navigation" aria-label="navigation menu">
-            <span className="logo" aria-label="logo">KEYS</span>
-            <NavLinks linkNames={linkNames} />
-            {/* 
-            <MenuBtn type='open' changeMenuState={changeMenuState} />
-            <DropdownMenu changeMenuState={changeMenuState}
-                linkNames={linkNames}
-                menuState={menuState} /> */}
-        </nav>
-    )
+  return (
+    <nav className="navigation" aria-label="navigation menu">
+      <span className="logo" aria-label="logo">KEYS</span>
+      <NavLinks linkNames={linkNames} />
+      <MenuBtn type='open' changeMenuState={changeMenuState} />
+      <DropdownMenu
+        changeMenuState={changeMenuState}
+        menuState={menuState}
+        linkNames={linkNames} />
+    </nav>
+  )
 }
 
 export default NavBar

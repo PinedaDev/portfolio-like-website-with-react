@@ -1,16 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types';
-
 import MenuBtn from '../MenuBtn/MenuBtn'
 
-const DropdownMenu = ({ linkNames, changeMenuState, menuState }) => {
+type DropdownMenuProps = {
+    linkNames: string[];
+    changeMenuState: () => void;
+    menuState: boolean
+}
+
+const DropdownMenu = ({ linkNames, changeMenuState, menuState }: DropdownMenuProps) => {
 
     const showDropdownLinks = () => (
         linkNames.map(link => (
             <li onClick={changeMenuState} key={link} role="none">
                 <a href={link === 'home' ? '' : '#' + link.toLowerCase()}
                     role="menuitem"
-                    tabIndex="0"
+                    tabIndex={0}
                     className="dropdown__link">{link}
                 </a>
             </li>
@@ -26,11 +29,4 @@ const DropdownMenu = ({ linkNames, changeMenuState, menuState }) => {
         </div>
     )
 }
-
-DropdownMenu.propTypes = {
-    linkNames: PropTypes.array,
-    changeMenuState: PropTypes.func,
-    menuState: PropTypes.bool
-}
-
 export default DropdownMenu
