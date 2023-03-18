@@ -1,36 +1,36 @@
 import { useState } from 'react'
-import PropTypes from 'prop-types'
 
-const FormTextArea = ({ id, label, name, placeHolder }) => {
+type FormTextAreaProps = {
+  id: string,
+  label: string,
+  name: string,
+  placeHolder: string;
+}
 
-    const [input, setInput] = useState('');
+const FormTextArea = ({ id, label, name, placeHolder }: FormTextAreaProps) => {
 
-    const inputHandler = (event) => setInput(event.target.value)
+  const [input, setInput] = useState('');
 
-    return (
-        <>
-            <label className="form__label" htmlFor={id}>{label}</label>
-            <textarea
-                id={id}
-                className="form__text_area"
-                placeholder={placeHolder}
-                style={styles}
-                name={name}
-                value={input}
-                cols=" 30"
-                rows="10"
-                onChange={e => inputHandler(e)}></textarea>
-        </>
-    )
+  const inputHandler = (event: React.FormEvent<HTMLTextAreaElement>) =>
+    setInput(event.currentTarget.value)
+
+  return (
+    <>
+      <label className="form__label" htmlFor={id}>{label}</label>
+      <textarea
+        id={id}
+        className="form__text_area"
+        placeholder={placeHolder}
+        style={styles}
+        name={name}
+        value={input}
+        cols={30}
+        rows={10}
+        onChange={e => inputHandler(e)}></textarea>
+    </>
+  )
 }
 
 const styles = { display: 'block' }
-
-FormTextArea.propTypes = {
-    id: PropTypes.string,
-    name: PropTypes.string,
-    label: PropTypes.string,
-    placeHolder: PropTypes.string
-}
 
 export default FormTextArea
