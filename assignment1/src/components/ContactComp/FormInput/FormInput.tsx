@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
+import PropTypes, { string } from 'prop-types'
 
 type FormInputProps = {
   id: string,
